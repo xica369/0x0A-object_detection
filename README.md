@@ -30,7 +30,9 @@ Class Yolo:
 When you run the 0-main.py you can see this:
 `$./0-main.py`
 
-``
+![0](https://user-images.githubusercontent.com/47121002/90188880-d575ac80-dd81-11ea-9d0d-d22d1b46995a.png)
+...
+
 
 ### 1-yolo.py // Process Outputs
 Class Yolo (Based on 0-yolo.py):
