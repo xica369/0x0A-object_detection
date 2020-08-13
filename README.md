@@ -1,5 +1,6 @@
 # 0x0A. Object Detection
-This project worked with yolov3 in the detection of objects
+
+Throughout this project, a program is developed that allows the detection of objects using the Yolov3 library.
 
 ## Requirements
 - Numpy (version 1.15)
@@ -26,6 +27,11 @@ Class Yolo:
 	- nms_t: the IOU threshold for non-max suppression
 	- anchors: the anchor boxes
 
+When you run the 0-main.py you can see this:
+`$./0-main.py`
+
+``
+
 ### 1-yolo.py // Process Outputs
 Class Yolo (Based on 0-yolo.py):
 
@@ -45,6 +51,9 @@ grid_height & grid_width => the height and width of the grid used for the output
 	(x1, y1, x2, y2) should represent the boundary box relative to original image
 - box_confidences: a list of numpy.ndarrays of shape (grid_height, grid_width, anchor_boxes, 1) containing the box confidences for each output, respectively
 - box_class_probs: a list of numpy.ndarrays of shape (grid_height, grid_width, anchor_boxes, classes) containing the box’s class probabilities for each output, respectively
+
+When you run the 1-main.py you can see the boxes, box_confidences and box_class_probs.
+
 ### 2-yolo.py // Filter Boxes
 Class Yolo (Based on 1-yolo.py):
 
@@ -57,6 +66,10 @@ Add the public method def filter_boxes(self, boxes, box_confidences, box_class_p
 - filtered_boxes: a numpy.ndarray of shape (?, 4) containing all of the filtered bounding boxes:
 - box_classes: a numpy.ndarray of shape (?,) containing the class number that each box in filtered_boxes predicts, respectively
 - box_scores: a numpy.ndarray of shape (?) containing the box scores for each box in filtered_boxes, respectively
+
+When you run the 2-main.py you can see this:
+`$./2-main.py`
+
 ### 3-yolo.py // Non-max Suppression
 Class Yolo (Based on 2-yolo.py):
 
@@ -69,6 +82,10 @@ Add the public method def non_max_suppression(self, filtered_boxes, box_classes,
 - box_predictions: a numpy.ndarray of shape (?, 4) containing all of the predicted bounding boxes ordered by class and box score
 - predicted_box_classes: a numpy.ndarray of shape (?,) containing the class number for box_predictions ordered by class and box score, respectively
 - predicted_box_scores: a numpy.ndarray of shape (?) containing the box scores for box_predictions ordered by class and box score, respectively
+
+When you run the 3-main.py you can see this:
+`$./3-main.py`
+
 ### 4-yolo.py // Load images
 Class Yolo (Based on 3-yolo.py):
 
@@ -78,6 +95,10 @@ Add the static method def load_images(folder_path):
 **Returns** a tuple of (images, image_paths):
 - images: a list of images as numpy.ndarrays
 - image_paths: a list of paths to the individual images in images
+
+When you run the 4-main.py you can see this:
+`$./4-main.py`
+
 ### 5-yolo.py // Preprocess images
 Class Yolo (Based on 4-yolo.py):
 Add the public method def preprocess_images(self, images):
@@ -93,6 +114,10 @@ Add the public method def preprocess_images(self, images):
 	- 3: number of color channels
 - image_shapes: a numpy.ndarray of shape (ni, 2) containing the original height and width of the images
 	- 2 => (image_height, image_width)
+
+When you run the 5-main.py you can see this:
+`$./5-main.py`
+
 ### 6-yolo.py // Show boxes
 Class Yolo (Based on 5-yolo.py):
 
@@ -118,6 +143,10 @@ Add the public method def show_boxes(self, image, boxes, box_classes, box_scores
 	- The saved image should have the file name file_name
 	- The image window should be closed
 - If any key besides s is pressed, the image window should be closed without saving
+
+When you run the 6-main.py you can see this:
+`$./6-main.py`
+
 ### 7-yolo.py // Predict
 Class Yolo (Based on 6-yolo.py):
 
@@ -129,3 +158,13 @@ Add the public method def predict(self, folder_path):
 **Returns:** a tuple of (predictions, image_paths):
 - predictions: a list of tuples for each image of (boxes, box_classes, box_scores)
 - image_paths: a list of image paths corresponding to each prediction in predictions
+
+When you run the 7-main.py you can see this:
+`$./7-main.py`
+
+## Author
+- Ximena Carolina Andrade Vargas
+She is Backend, Mechatronic Engineer and Psychologist. She is a lover of Machine Learning.
+Twitter: @xica369
+LinkedIn: https://www.linkedin.com/in/xicav369/
+Project repository: https://github.com/xica369/holbertonschool-machine_learning/edit/master/supervised_learning/0x0A-object_detection
