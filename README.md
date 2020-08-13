@@ -188,4 +188,4 @@ When you run the 7-main.py you can see images similar to this:
 She is Backend, Mechatronic Engineer and Psychologist. She is a lover of Machine Learning.
 Twitter: @xica369
 LinkedIn: https://www.linkedin.com/in/xicav369/
-Project repository: https://github.com/xica369/holbertonschool-machine_learning/edit/master/supervised_learning/0x0A-object_detection
+Project repository: https://github.com/xica369/0x0A-object_detection
