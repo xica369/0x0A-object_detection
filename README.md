@@ -31,8 +31,10 @@ When you run the 0-main.py you can see this:
 `$./0-main.py`
 
 ![0](https://user-images.githubusercontent.com/47121002/90188880-d575ac80-dd81-11ea-9d0d-d22d1b46995a.png)
+
 ...
 
+![00](https://user-images.githubusercontent.com/47121002/90189300-87ad7400-dd82-11ea-8df3-74ee7380c576.png)
 
 ### 1-yolo.py // Process Outputs
 Class Yolo (Based on 0-yolo.py):
@@ -72,6 +74,8 @@ Add the public method def filter_boxes(self, boxes, box_confidences, box_class_p
 When you run the 2-main.py you can see this:
 `$./2-main.py`
 
+![2](https://user-images.githubusercontent.com/47121002/90189506-eecb2880-dd82-11ea-89e4-a93c9c984df0.png)
+
 ### 3-yolo.py // Non-max Suppression
 Class Yolo (Based on 2-yolo.py):
 
@@ -88,6 +92,8 @@ Add the public method def non_max_suppression(self, filtered_boxes, box_classes,
 When you run the 3-main.py you can see this:
 `$./3-main.py`
 
+![image](https://user-images.githubusercontent.com/47121002/90189683-3651b480-dd83-11ea-8f23-602aeb71836b.png)
+
 ### 4-yolo.py // Load images
 Class Yolo (Based on 3-yolo.py):
 
@@ -100,6 +106,8 @@ Add the static method def load_images(folder_path):
 
 When you run the 4-main.py you can see this:
 `$./4-main.py`
+
+![image](https://user-images.githubusercontent.com/47121002/90189753-597c6400-dd83-11ea-8c3e-abaaa9565d35.png)
 
 ### 5-yolo.py // Preprocess images
 Class Yolo (Based on 4-yolo.py):
@@ -119,6 +127,12 @@ Add the public method def preprocess_images(self, images):
 
 When you run the 5-main.py you can see this:
 `$./5-main.py`
+
+![image](https://user-images.githubusercontent.com/47121002/90189980-c68ff980-dd83-11ea-8675-5dc07814a14a.png)
+
+and ...
+
+![image](https://user-images.githubusercontent.com/47121002/90190104-fdfea600-dd83-11ea-869c-407d9166594b.png)
 
 ### 6-yolo.py // Show boxes
 Class Yolo (Based on 5-yolo.py):
@@ -149,6 +163,8 @@ Add the public method def show_boxes(self, image, boxes, box_classes, box_scores
 When you run the 6-main.py you can see this:
 `$./6-main.py`
 
+![image](https://user-images.githubusercontent.com/47121002/90190199-30a89e80-dd84-11ea-87c9-033542b47692.png)
+
 ### 7-yolo.py // Predict
 Class Yolo (Based on 6-yolo.py):
 
@@ -161,8 +177,11 @@ Add the public method def predict(self, folder_path):
 - predictions: a list of tuples for each image of (boxes, box_classes, box_scores)
 - image_paths: a list of image paths corresponding to each prediction in predictions
 
-When you run the 7-main.py you can see this:
+When you run the 7-main.py you can see images similar to this:
 `$./7-main.py`
+
+![image](https://user-images.githubusercontent.com/47121002/90190302-5df54c80-dd84-11ea-8eb1-66a0f33fca55.png)
+
 
 ## Author
 - Ximena Carolina Andrade Vargas
